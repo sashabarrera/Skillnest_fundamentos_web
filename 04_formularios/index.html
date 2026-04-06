@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <header>
+    <h1>Formularios HTML - ejemplos</h1>
+        <hr>
+    </header>
+    <main>
+        <h2>Formulario de registro</h2>
+        <p>Completa los siguentes datos</p>
+        <!-- Etiqueta para crear un formulario -->
+        <form>     
+        <label>Nombre:</label> <!-- Etiqueta para describe al campo -->
+        <input type="text" name="nombre" placeholder="Ejemplo: Sasha Barrera"><!-- Campo de texto -->
+        <br><br>
+        <label> Correo electronico:</label>
+        <input type="email" name="correo" placeholder="Ejemplo: sasha@barrera.com">
+            <br><br>
+            <label>Contraseña:</label>
+            <input type="Password" name="Password">
+            <br><br>
+            <label>Edad:</label>
+            <input type="number" name="edad"> <!-- Admite solo números -->
+            <br><br>
+            <label>Fecha de nacimiento:</label>
+            <input type="date"name="fechaNac"> <!-- Formato fecha -->
+            <br><br>
+            <label>Género:</label><br>
+            <input type="radio" name="Genero" value="Maculino"><!--Elementos de elección unica-->
+            Masculino
+            <input type="radio" name="Genero" value="Femenino"> 
+            Femenino
+            <br><br>
+            <label>Intereses:</label><br>
+            <input type="checkbox" name="Intereses" value="Musica">><!--Elementos de seleccion multiple-->
+            Musica<br>
+            <input type="Checkbox" name="Intereses" value="Deporte">
+            Deporte<br>
+            <input type="Checkbox" name="Intereses" value="Pelicula">
+            Pelicula<br>
+            <label>Ciudad:</label><br>
+            <select name="Cuidad"> <!-- Lista desplegable de opciones -->
+                <option>Santiago</option>
+                <option>Valparaiso</option>
+                <option>Coquimbo</option>
+                <option>Arica</option>
+            </select>
+            <br><br>
+            <label>Comentarios</label><br>
+            <textarea name="Comentario" rows="4" cols="30"></textarea><!-- Elemento de texto largo con filas y columnas -->
+            <br><br>
+            <label>Subir archivo:</label>
+            <input type="File" name="Archivo"><!-- Seleccionar para un archivo local -->
+            <br><br>
+            <label>Color favorito:</label><br>
+            <input type="Color" name="Color"><!--Seleccionar un color-->
+            <br><br>
+            <label>Nivel de satisfacción:</label><br>
+            <input type="Range" name="Satifaccion" min="1" max="7">
+            <br><br>
+            <input type="Submit" value="Enviar"><!--Boton para enviar formulario -->
+            <input type="Reset" value="Limpiar"><!--Boton para limpiar el formulario -->
+            <br><br>
+        </form>
+        <!-- Creacion de tabla con datos-->
+        <h2>Tabla de usuario</h2>
+        <table border="1"><!--Crear tabla con borde en 1 -->
+            <tr><!-- Fila de tabla (table row) -->
+                <th>Nombre</th><!-- Encabezado de la tabla (table head) -->
+                <th>Correo</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Sasha</td><!-- Datos de la tabla (tabla data)-->
+                <td>sasha@barrera.com</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>maria@barrera.com</td>
+                <td>18</td>
+            </tr>
+        </table>
+    </main>
+    </body>
+</html>

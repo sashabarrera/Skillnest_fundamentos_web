@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Declara el tipo de documento. Indica al navegador que usara HTML5 
+<html lang="es">
+<!-- Elemento principal del documento HTML. lang="es" indica el contenido esta en español" -->
+
+<head> <!-- Seccion de configuracion del documento -->
+    <meta charset="UTF-8">
+    <!-- Define la condificacion de carateres. 
+    UTF-8 permite usar correctamente tilde, ñ, simbolos, etc -->
+    <meta name="viewport" content="width=width, initial-scale=1.0">
+    <!-- Hace que el sitio sea responsive.
+    Permite que el diseño se adapte correctamente a celulares y tablets -->
+    <title>Practicando HTML - img y video </title>
+    <!-- Titulo que aparece en el navegador -->
+    <meta name="author" content="sasha">
+    <!-- Indica quien creo el sitio web-->
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Conexion con hoja CSS de estilos -->
+</head>
+
+<body>
+    <header> <!-- Encabezado del documento -->
+    <h1>Sitio multimedia personal</h1>
+    </header>
+    <hr> <!-- Crea una linea de division -->
+    <main> <!-- Seccion principal del documento -->
+        <h2>Mis datos..</h2>
+        <p>Nombre: Sasha<br> <!--br es unsalto de linea-->
+            Curso 3°C 
+        </p>
+        <hr>
+        <h2>Galeria multimedia</h2>
+        <p>Imagen de ejemplo</p>
+        <img src="static/images/imagen1.png" alt="Primera imagen" width="300">
+        <img src="static/images/imagen2.png" alt="Segunda imagen" width="300">
+        <img src="static/images/imagen3.png" alt="Tercera imagen" width="300">
+        <hr>
+        <h2>Videos</h2>
+        <video width="400" controls>
+            <source src="static/video/Tom y Jerry en Español _ Dibujos Animados Clásicos Compilación Tom, Jerry y Spike _ WB Kids.mp4" type="video/mp4">
+        </video>
+        <video width="400" controls>
+            <source src="static/video/videoplayback.mp4" type="video/mp4">
+        </video>
+    </main>
+    <footer>
+        <p style="text-align:center">Todos los derechos reservados
+            -<a href="https://es.wikipedia.org/wiki/Animalia">Mas información</a> <!--etiqueta <a> para vinculos-->
+        </p>
+    </footer>
+</body>
+</html>
