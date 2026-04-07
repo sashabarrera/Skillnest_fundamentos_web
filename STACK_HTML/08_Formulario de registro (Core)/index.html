@@ -9,59 +9,87 @@
 
 <body>
     <h1>Crear una cuenta en Discord</h1>
+
+    <form action="Registro" method="post">
+        <div>
+            <label for="Nombre"><strong>Nombre:</strong></label>
+            <input type="text" id="Nombre" name="nombre">
+        </div>
+        <br>
+        <div>
+            <label for="Apellido"><strong>Apellido:</strong></label>
+            <input type="text" id="Apellido" name="Apellido">
+        </div>
+        <br>
+        <div>
+            <label for="Correo_electrónico"><strong>Correo electrónico:</strong></label>
+            <input type="text" id="Correo_electrónico" name="Correo electrónico">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="Contraseña"><strong>Contraseña:</strong></label>
+            <input type="password" id="Contraseña" name="Contraseña">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="Confirmar_contraseña"><strong>Confirmar contraseña:</strong></label>
+            <input type="password" id="Confirmar_contraseña" name="Confirmar_contraseña">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="Fecha_nacimiento"><strong>Fecha_nacimiento:</strong></label>
+            <input type="date" id="Fecha_nacimiento" name="Fecha_nacimient">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label><strong>Genero:</strong></label>
+            <input type="radio" id="Masculino" value="bold" name="genero">
+            <label for="Masculino">Masculino</label>
+            <input type="radio" id="Femenino" value="Femenino" name="genero">
+            <label for="Femenino">Femenino</label>
+            <input type="radio" id="prefiero_no_decirlo" value="prefiero_no_decirlo" name="genero">
+            <label for="prefiero_no_decirlo">Prefiero no decirlo</label>
+            <br>
+        </div>
+        <br>
+        <div>
+            <label><strong>Descripcion sobre ti:</strong></label>
+            <br>
+            <textarea id="comentario" name="comentario" rows="4" cols="30"></textarea>
+            <br>
+        </div>
+        <div>
+            <br>
+            <label for="Selecciona_tus_intereses"><strong>Selecciona tus
+                    intereses:</strong></label><br>
+            <select id="Selecciona_tus_intereses" name="Selecciona tus intereses">
+                <option value="Musica">Musica</option>
+                <option value="Peliculas">Peliculas</option>
+                <option value="Deportes">Deportes</option>
+                <option value="Tecnologia">Tecnologia</option>
+            </select>
+        </div>
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label>
+                <strong>registrarte, aceptas los<a
+                        href="https://media.es.wired.com/photos/63ffb584727167aa817b29f2/16:9/w_2560%2Cc_limit/GettyImages-82570115-corr.jpg"> Términos
+                        y condiciones de Discord.</a> </strong>
+            </label>
+        </div>
+        <br>
+            <input type="submit" value="Registrarse">
+    </form>
 </body>
 
 </html>
-<form action="Registro" method="post">
-    <div>
-        <label for="Nombre"><strong>Nombre:</strong></label>
-        <input type="text" id="nombre" name="nombre">
-    </div>
-    <br>
-    <div>
-        <label for="Apellido"><strong>Apellido:</strong></label>
-        <input type="text" id="Apellido" name="Apellido">
-    </div>
-    <br>
-    <div>
-        <label for="Correo electrónico"><strong>Correo electrónico:</strong></label>
-        <input type="text" id="Correo electrónico" name="Correo electrónico" </div>
-        <br>
-        <div>
-            <br>
-            <label for="Contraseña"><strong>Contraseña:</strong></label>
-            <input type="password" id="Contraseña" name="Contraseña" </div>
-            <br>
-            <div>
-                <br>
-                <label for="Confirmar contraseña"><strong>Confirmar contraseña:</strong></label>
-                <input type="password" id="Confirmar contraseña" name="Confirmar contraseña" </div>
-                <br>
-                <div>
-                    <br>
-                    <label for="Fecha_nacimiento"><strong>Fecha_nacimiento:</strong></label>
-                    <input type="date" id="Fecha_nacimiento" name="Fecha_nacimient" </div>
-                    <br>
-                    <div>
-                        <br>
-                        <label><strong>Genero:</strong></label>
-                        <input type="radio" id="Masculino" name="estilo_fuente" value="bold">
-                        <label for="Masculino"><strong>Masculino</strong></label>
-                        <input type="radio" id=" name=" estilo_fuente" value="normal">
-                        <label for="Femenino"><strong>Femenino</strong></label>
-                        <input type="radio" id=" name=" estilo_fuente" value="normal">
-                        <label for="Prefiero no decirlo"><strong>Prefiero no decirlo</strong></label>
-                        <br>
-                        <input type="checkbox" id="Descripcion sobre ti" name="Descripcion sobre ti">
-                        <label for="acepto">Acepto los términos y condiciones</label>
-                    </div>
-                    <div>
-                        <label for="comentario">Comentario:</label>
-                        <textarea id="comentario" name="comentario" rows="4" cols="30"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </body>
-
-        </html>
