@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+h1 {
+   text-align: center;  /* Alineado al centro */
+}
+.texto1 {
+   text-align: center;  /* Alineado al centro */
+}
+.centrado{
+    text-align: center;
+}
+.encabezado{
+    padding: 40px;
+}
+.titulo{
+    margin-bottom: 20px;
+}
+.centrado a{
+    text-decoration: none;/*Quita el subrayado*/
+    font-weight: bold;
+}
+.container{
+    width:950px;
+    margin:0 auto;
+}
+.caja{
+    display: inline-block; /*Elemento en bloque*/
+    padding:75px 30px;
+    color:white;
+    font-weight: bold;
+    width: 300px;
+    border-radius:10px;
+}
+.azul{
+    background-color:#008DD2;
+}
+.rojo{
+    background-color:#EE433A;
+}
+.verde{
+    background-color:#00C56A;
+}
+.encabezado{
+    padding: 40px;
+}
+.centrado B{
+    text-align: center;
+}
+.Caja2 {
+    display: inline-block;
+    padding: 75px 30px;
+    color:white;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 10px;
+}
+.amarillo{
+    background-color: #F8C93E;
+}
+.morado{
+    background-color:#9E6BC1 ;
+}
+.celeste{
+    background-color:#3798A9;
+}
