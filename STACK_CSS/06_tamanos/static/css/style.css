@@ -94,11 +94,17 @@ background-size: 80%;
 .aceptar {
 border: 2px dotted green;
 }
-
 .articulo {
 border: 1px solid black;
 }
 /*bordes redondeados*/
+.boton_redondeado {
+border-radius: 5px;
+}
+
+.caja_redondeada{
+border-radius: 50%;
+}
 
 
 
