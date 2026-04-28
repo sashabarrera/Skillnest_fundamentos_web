@@ -137,7 +137,7 @@
 .caja_redondeada {
     width: 40px;
     height: 40px;
-    padding: 9px 15px;
+    padding: 10px 16px;
     background-color: darkgrey;
     font-weight: bold;
     border-radius: 50%;/* 50% de radius: circulo perfecto */
