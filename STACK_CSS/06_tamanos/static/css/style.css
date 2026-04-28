@@ -90,6 +90,15 @@ background-color: gainsboro;
 background: rgb(218, 217, 217) url("/STACK_CSS/06_tamanos/static/images/banner.png") no-repeat fixed center center;
 background-size: 80%;
 }
+/*borde y estilo*/
+.aceptar {
+border: 2px dotted green;
+}
+
+.articulo {
+border: 1px solid black;
+}
+/*bordes redondeados*/
 
 
 
