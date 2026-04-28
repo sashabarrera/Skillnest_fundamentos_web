@@ -138,14 +138,14 @@
     width: 40px;
     height: 40px;
     padding: 10px 16px;
-    background-color: darkgrey;
+    background-color: rgb(231, 229, 229);
     font-weight: bold;
     border-radius: 50%;/* 50% de radius: circulo perfecto */
 }
 .cajitas{
 width: 100px;
 height: 60px;
-outline: solid 1px rgb(151, 148, 148);
+outline: solid 1px rgb(175, 171, 171);
 }
 .box1{
     background-color: bisque;
