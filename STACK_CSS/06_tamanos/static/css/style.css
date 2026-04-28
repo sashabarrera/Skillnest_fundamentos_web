@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-/* Contabiliza bordes*/
+    /* Contabiliza bordes*/
 
 }
+
 .encabezado {
     width: 100%;
     /* Todo el ancho de la pagina*/
@@ -25,6 +26,10 @@
     padding: 20px
 }
 
+.row {
+    padding: 30px;
+}
+
 /*Tamaños ejemplos CSS*/
 .aceptar {
     width: 100px;
@@ -40,71 +45,137 @@
 }
 
 .parrafo1 {
-    font-size: 30px;/* Tamaño fijo */
+    font-size: 30px;
+    /* Tamaño fijo */
 }
 
 .link1 {
-    font-size: 300%;/* Tamaño propocional*/
+    font-size: 300%;
+    /* Tamaño propocional*/
 }
+
 .cursiva {
-    color:blue;
-margin-top:15px;
-font-style:italic;
+    color: blue;
+    margin-top: 15px;
+    font-style: italic;
 }
+
 /*
 📦 Manejo del contenido con overflow: hidden, scroll, auto
 */
-.caja{
+.caja {
     width: 200px;
     height: 100px;
-    display: inline-block; /* Elementos en bloque o columna */
+    display: inline-block;
+    /* Elementos en bloque o columna */
 }
-.example1{
-height: 100px;
-width: 300px;
-background-color: black;
+
+.example1 {
+    height: 100px;
+    width: 300px;
+    background-color: black;
 }
-.example2{
-height: 100px;
-width: 300px;
-background-color: brown;
+
+.example2 {
+    height: 100px;
+    width: 300px;
+    background-color: brown;
 }
-.example3{
-height: 100px;
-width: 300px;
-background-color: gainsboro;
+
+.example3 {
+    height: 100px;
+    width: 300px;
+    background-color: gainsboro;
 }
-.hidden{ /* Oculta los elementos que sobre salen del contenedor */
+
+.hidden {
+    /* Oculta los elementos que sobre salen del contenedor */
     overflow: hidden;
 }
-.scroll{
+
+.scroll {
     overflow: scroll;
 }
-.auto{
+
+.auto {
     overflow: auto;
 }
+
 /*🎨Fondo y colores*/
 .banner {
     height: 500px;
     width: 100%;
-background: rgb(218, 217, 217) url("/STACK_CSS/06_tamanos/static/images/banner.png") no-repeat fixed center center;
-background-size: 80%;
+    background: rgb(218, 217, 217) url("/STACK_CSS/06_tamanos/static/images/banner.png") no-repeat fixed center center;
+    background-size: 80%;
+    /*Aumenta el tamaño de imagen dentro del contenedor*/
 }
-/*borde y estilo*/
-.aceptar {
-border: 2px dotted green;
+
+/*🟫borde y estilo*/
+.cancelar {
+    border: 2px dotted rgb(175, 19, 66);
+    /* Dotted: linea segmentada......... */
+    padding: 15px;
+    cursor: pointer;
 }
+
 .articulo {
-border: 1px solid black;
+    border: 2px solid black;
+    /* Solid: linea solida*/
+    height: 50px;
+    width: 100px;
+    display: inline-block;
 }
-/*bordes redondeados*/
+
+/*🟢bordes redondeados*/
 .boton_redondeado {
-border-radius: 5px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    /* Redondea esquinas*/
+    cursor: pointer;
 }
 
-.caja_redondeada{
-border-radius: 50%;
+.caja_redondeada {
+    width: 40px;
+    height: 40px;
+    padding: 9px 15px;
+    background-color: darkgrey;
+    font-weight: bold;
+    border-radius: 50%;/* 50% de radius: circulo perfecto */
+}
+.cajitas{
+width: 100px;
+height: 60px;
+outline: solid 1px rgb(151, 148, 148);
+}
+.box1{
+    background-color: bisque;
+    padding: 10px; /* Padding aplicado en todos los lados*/
+}
+
+.box2{
+    background-color: cornflowerblue;
+    padding-top: 0px ; /*Espacio interno: arriba */
+    padding-right: 5px; /* Espacio interno: Derecha */
+    padding-bottom: 0px; /* Espacio interno: abajo */
+    padding-left: 5px; /* Espacio interno: izquierdo */
+    /*Padiing: 0px 5px 0px 5px --> aplicar en todos lados */
+    /*Pdding: 0px 5px --> 0px del eje (Y) y 5px del eje(X)*/
+}
+
+.box3{
+    background-color: darkgray;
+    margin: 10px; /* Margen externo:Separara elementos*/
+}
+
+.box4{
+    background-color: hotpink;
+    margin: 0px 20px;/* Eje X modidicado con margin*/
+    padding: 5px 0px; /* Eje Y modificado con padding*/
 }
 
 
+.box5{
+    float: left;
+    width: 30%;
 
+}
