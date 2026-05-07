@@ -33,7 +33,7 @@ padding: 0;
 }
 
 .parrafo1{
-    padding-top: 30px;
+    padding-top: 15px;
 }
 /*HEADER*/
 .header{
@@ -79,7 +79,7 @@ padding: 0;
 }
 
 .parrafo2{
-    padding: 10px;
+    padding: 5px;
 }
 .contenedor_tarjeta{
     margin: auto;
@@ -105,5 +105,8 @@ padding: 0;
     color: white;
     margin: 10px;
     padding: 15px;
+}
+.tit{
+    margin: 5px;
 }
 
