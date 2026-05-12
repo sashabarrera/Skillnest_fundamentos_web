@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafo1{
+    padding-top: 15px;
+}
+/*HEADER*/
+.header{
+    background-color: #173353;
+    color:white;
+    padding-top:30px;
+    text-align: center;
+}
+
+
+
+.boton{
+    display: inline-block;
+    color: white;
+    text-decoration: none;/*quita subrayado*/
+    padding: 20px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.botor:hover{
+    background-color: #969191;
+}
+/*MAIN*/
+.contenedor_principal{
+    padding: 55px 60px;
+    box-shadow:2px 1px  5px black;
+    border-radius:6px ;
+    padding: 30px;
+    margin: 10px 90px 0px 90px;
+    margin-top: 30px;
+}
+
+.texto{
+    background-color: #E67E22;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.parrafo2{
+    padding: 5px;
+}
+.contenedor_tarjeta{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    padding: 15px;
+}
+
+.box{
+    width: 32%;
+    display: inline-block;
+    height: 120px;
+    background-color:#D35400;
+    color:white;
+    margin: 15px 5px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.bloque{
+    display: block; 
+    background-color: rgb(139, 139, 211);
+    color: white;
+    margin: 10px;
+    padding: 15px;
+}
+.tit{
+    margin: 5px;
+}
