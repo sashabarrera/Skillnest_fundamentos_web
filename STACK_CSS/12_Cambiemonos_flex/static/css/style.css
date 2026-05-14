@@ -6,14 +6,14 @@
 }
 
 .parrafo1{
-    padding-top: 5px ;
-    font-size:19px;
+    padding-top: 10px ;
+    font-size:20px;
 }
 /*HEADER*/
 .header{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 40px;
     background-color: #173353;
     color:white;
     text-align: center;
@@ -23,46 +23,51 @@
 .contenedor_principal{
     box-shadow:2px 5px  5px rgb(214, 211, 211);
     border-radius:10px ;
-    padding: 30px ;
-    margin: 10px 90px 0px 90px;
+    padding: 30px 40px;
+    margin: 0 auto; /* Centrar elementos*/
     margin-top: 30px;
     background-color: white;
-    width: 92%;
+    width: 97%;
 }
 
 .texto{
-    height: 160px;
+    height: 190px;
     background-color: #E67E22;
     color: white;
     padding: 30px;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .parrafo2{
-    padding: 7px;
-    font-size: 25px;
+    padding: 10px;
+    font-size: 35px;
 }
 .contenedor_tarjeta{
     display: flex;
-    width:100%;
     text-align: center;
-
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .box{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
     height: 200px;
     background-color:#D35400;
     color:white;
-    margin: 28px 8px;
-    padding: 20px;
+    padding: 10px 40px;
     border-radius: 10px;
 }
 
 .tit{
     margin: 5px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .body{
