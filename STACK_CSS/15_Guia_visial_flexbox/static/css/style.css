@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(253, 249, 249, 0.938);
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333 ;
+}
+
+header{
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/*Diseño NAV*/
+.nav{
+    display: flex;
+    justify-content: center; /*Centrar contenido con flex*/
+    gap:20px; /*Separacion de elementos*/
+    background-color: #334155;
+    padding: 15px;
+}
+
+.nav a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold; /*Negrita*/
+}
+
+.main{
+    padding: 30px;
+}
+
+.seccion{
+    background-color:white ;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.623);
+}
+
+.contenedor{
+    display: flex;
+    background-color: rgb(206, 205, 205);
+    height: 200px;
+    border: 3px dashed #94a3b8;
+    margin-top: 20px;
+}
+
+/*Caja a Manipular*/
+.caja{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(142, 183, 216);
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /*Centra horizontalmente*/
+    align-items: center; /*Centra verticalmente*/
+
+}
+
+/*Ejemplos*/
+/*1.- justify content + gap */
+
+.ejemplo1{
+    justify-content: center; /*Centrar contenido*/
+    gap:20px;
+}
+
+/*2.- Align-items + gap */
+
+.ejemplo2{
+    align-items: center;
+    gap: 20px;
+}
+
+.ejemplo3{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+.ejemplo4{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.caja-grande{
+    width: 180px;
+    height: 100px;
+}
+
+.ejemplo5{
+    justify-content: center;
+    align-items: center;
+}
