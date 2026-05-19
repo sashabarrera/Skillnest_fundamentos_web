@@ -1,0 +1,50 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Contenedor de filas */
+.row {
+    display: flex;
+    gap: 14px;
+}
+
+/* Estilos generales para columnas */
+.col {
+    background-color: #87CEEB;
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px;
+    transition: backgound-color 0.5s ease;
+}
+
+.col:hover{
+    background-color: rgb(160, 159, 159);
+}
+/* Ajuste de tamaños específicos */
+.col-2 {
+    background-color: #87CEEB;
+    flex: 2;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.col-3 {
+    background-color: #87CEEB;
+    flex: 3;
+    border-radius: 10px;
+    padding: 20px;
+}
