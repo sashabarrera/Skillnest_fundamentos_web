@@ -44,7 +44,7 @@ body{
 /*contenedor principal*/
 .contenedor-principal{
     display: flex;
-    flex-wrap: wrap; /*cundo los elementos no caben, baja automaticamente*/
+    flex-wrap: wrap; /*cuando los elementos no caben, baja automaticamente*/
     justify-content: center;
     gap: 30px;
     margin-top: 100px;/*margen para que el contenido quede visible*/
