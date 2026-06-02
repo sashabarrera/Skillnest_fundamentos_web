@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sasha Barrera">
-    <title>Pagina de perfil</title>
+    <meta name="autho" content="Sasha Barrera">
+    <title>Document</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
-    <header class="encabezado">
-        <nav class="barra">
+    <header class="header">
+        <nav class="nav">
             <h1>Perfil</h1>
-            <div class="nav">
+            <div class="Nav-links">
                 <a href="#">Inicio</a>
                 <a href="#">Mi perfil</a>
                 <a href="#">Conexiones</a>
@@ -22,33 +22,35 @@
         </nav>
     </header>
     <main class="main">
-        <div class="col-izquierda">
-            <section class="perfil">
-                <img src="static/images/" alt="FotodePerfil">
-                <div class="superior-tarjeta"></div>
-                <div class="descripcion">
-                    <h2>Jane Doe</h2>
-                    <div class="texto">
-                        <p>Begen, Noruega</p>
-                        <h2>Desarrollandora Frontend Conocimientos en HTML, CSS, JavaScript </h2>
-                    </div>
-                    <div class="Azul">
-                        <p>⚙️ Editar perfil</p>
+        <section class="columna-izquierda">
+            <div class="perfil">
+                <div class="superior-tarjeta">
+                </div>
+                <div class="descripcion-tarjeta">
+                    <img src="static/images/images.jpg" alt="Perfil">
+                    <h1>Jane Doe</h1>
+                    <h3 class="descripcion">Bergen, Noruega</h3>
+                    <p>Desarrollador Frontend
+                        Conocimientos en HTML,CSS y JavaScript</p>
+                    <div class="descripcion-link">
+                        <a href="#">⚙ Editar Perfil</a>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="col-derecha">
-            <main class="tarjeta1">
+            </div>
+        </section>
+        <section class="columna-derecha">
+            <div class="tarjeta-conexiones">
+            </div>
+            <div class="tarjeta-solicitudes">
                 <h2>Solitudes de conexión <button>Ver todas</button></h2>
                 <div>
-                    <img src="static/images/" alt="FotodePerfil">
+                    <img src="static/images/user-icon.png" alt="FotodePerfil">
                     <p>Steve Jobs</p>
-                    <img src="static/images/" alt="FotodePerfil">
+                    <img src="static/images/user-icon.png" alt="FotodePerfil">
                     <p>Bill Gates</p>
                 </div>
-            </main>
-            <section class="tarjeta2">
+            </div>
+            <section class="tarjeta">
                 <h2>Tus Conexiones <button>Ver todas</button></h2>
                 <div class="contenido">
                     <img src="static/images/" alt="FotodePerfil">
@@ -61,8 +63,8 @@
                     <p>Grace Hopper</p>
                 </div>
             </section>
-        </div>
-
+            </div>
+        </section>
     </main>
 
 </body>

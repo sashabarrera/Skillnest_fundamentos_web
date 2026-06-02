@@ -38,8 +38,12 @@ body{
     padding: 10px;
     border-radius: 6px;
     margin: 5px;
+}
+
+.header{
 
 }
+
 .superior-tarjeta {
     background-color: #3498DB;
     height: 130px;
@@ -78,4 +82,62 @@ body{
 
 .descripcion-link{
 text-decoration: ;
+}
+
+.columna-izquierda{
+
+}
+
+.perfil{
+
+}
+
+.columna-derecha{
+
+}
+
+.tarjeta-conexiones{
+ 
+}
+
+.tarjeta-solicitudes{
+    display: flex;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    padding: 100px;
+    box-shadow: 0px 0px 8px rgb(136, 134, 134);
+    flex-direction: column;
+    margin-left: 100px;
+    color: black;
+    position: relative;
+
+}
+.tarjeta-solicitudes button{
+    border-radius: 5px;
+    border: solid #90C7EB;
+    padding: 10px 20px;
+    color:#90C7EB;
+    background-color: white;
+}
+
+.tarjeta-solicitudes img{
+    height:100px ;
+   
+}
+
+.tarjeta{
+    display: flex;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    padding: 100px;
+    box-shadow: 0px 0px 8px rgb(170, 170, 170);
+    flex-direction: column;
+    gap:15px;
+    margin-left: 40px;
+    color: black;
+    position: relative;
+}
+
+.contenido{
+
 }
