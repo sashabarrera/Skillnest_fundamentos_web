@@ -1,11 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background-color:#ECF0F1;
+
+body {
+    background-color: #ECF0F1;
 }
 
 .main {
@@ -40,7 +41,7 @@ body{
     font-size: 25px;
 }
 
-.header{
+.header {
     background-color: #2C3E50;
 }
 
@@ -53,8 +54,9 @@ body{
     align-items: center;
     margin-top: 40px;
     border-radius: 15px 15px 0px 0px;
-}   
-.descripcion-tarjeta{
+}
+
+.descripcion-tarjeta {
     text-align: center;
     display: flex;
     background-color: white;
@@ -62,54 +64,51 @@ body{
     padding: 100px;
     box-shadow: 0px 0px 8px rgb(170, 170, 170);
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
     margin-left: 80px;
     color: black;
     position: relative;
-    flex: 2;
 }
 
 .usuario {
     position: absolute;
     top: -100px;
-    left: 240px;
+    left: 270px;
 }
 
 .usuario img {
     height: 200px;
 }
 
-.descripcion{
-    color:rgb(170, 170, 170);
-}
-
-.descripcion-link{
-font-size: 24px;
-}
-
-.columna-izquierda{
+.descripcion {
+    color: rgb(170, 170, 170);
 
 }
 
+.descripcion-link {
+    font-size: 24px;
+}
 
-
-.columna-derecha{
-    margin-left: 170px;
+.columna-izquierda {
     display: flex;
     flex-direction: column;
+    flex: 3.4;
+    padding: 100px;
 }
 
-.tarjeta-conexiones{
 
+
+.columna-derecha {
+    margin: 110px 60px 0 0;
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
 }
 
-
-.tarjeta-solicitudes{
+.tarjeta-solicitudes {
     display: flex;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    padding: 30px;
-    width: 600px;
     box-shadow: 0px 0px 8px rgb(136, 134, 134);
     flex-direction: column;
     margin: 20px 26px;
@@ -117,36 +116,44 @@ font-size: 24px;
     position: relative;
     font-size: 25px;
 }
-.tarjeta-solicitudes button{
+
+.tarjeta-solicitudes button {
     border-radius: 5px;
     border: solid #90C7EB;
     padding: 10px 20px;
-    color:#90C7EB;
+    color: #90C7EB;
     background-color: white;
     font-size: 20px;
 }
 
-.tarjeta-solicitudes img{
-    height:80px ;
+.tarjeta-solicitudes img {
+    height: 80px;
 }
 
-.tarjeta{
+.tarjeta {
+    width: 530px;
     display: flex;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
     padding: 20px;
     box-shadow: 0px 0px 8px rgb(170, 170, 170);
     flex-direction: column;
-    margin: 40px;
+    margin: 30px;
     color: black;
     position: relative;
-    margin-top: 40px;
+    margin-top: 20px;
 }
-.tarjeta button{
+
+.h2 {
+    font-size: 35px;
+    color: rgb(56, 56, 56)
+}
+
+.tarjeta button {
     border-radius: 5px;
     border: solid #90C7EB;
     padding: 10px 20px;
-    color:#90C7EB;
+    color: #90C7EB;
     background-color: white;
     font-size: 20px;
 }
@@ -155,42 +162,50 @@ font-size: 24px;
     border: 2px solid red;
 }
 
-.contenido{
-align-items: center;
+.contenido {
+    align-items: center;
 }
-.contenido img{
-    height:80px ;
+
+.contenido img {
+    height: 80px;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.row-contacto{
+
+.row-contacto {
     display: flex;
     align-items: center;
     justify-content: 20px;
 }
-.row-botones{
+
+.row-contacto p {
+    font-size: 20px;
+}
+
+.row-botones {
     position: flex;
     display: flex;
     align-items: center;
-    gap:15px;
+    gap: 15px;
+
 }
-.delete{
+
+.delete {
     background-color: red;
-    color:white;
-    padding:10px;
+    color: white;
+    padding: 10px;
     border-radius: 50%;
     font-size: 12px;
 }
 
-.row-boton{
+.row-boton {
     display: flex;
     align-items: center;
-    gap:15px;
+    gap: 15px;
 }
 
-.btn-row{
-
-}
+.btn-row {}
