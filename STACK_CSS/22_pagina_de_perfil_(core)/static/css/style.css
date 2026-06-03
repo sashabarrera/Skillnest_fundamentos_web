@@ -82,13 +82,15 @@ body {
 
 .descripcion {
     color: rgb(170, 170, 170);
-
 }
 
 .descripcion-link {
     font-size: 24px;
 }
 
+.parrafo{
+    font-size: 20px;
+}
 .columna-izquierda {
     display: flex;
     flex-direction: column;
