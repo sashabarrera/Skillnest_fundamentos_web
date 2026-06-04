@@ -12,7 +12,7 @@ body{
 
 }
 .NAVEGACION{
-
+    border: 2px solid red;
     background-color:white;
     color: white;
     display: flex;
