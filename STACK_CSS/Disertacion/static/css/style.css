@@ -1,45 +1,80 @@
+/* Reseteo global para eliminar márgenes del navegador por defecto */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Configuración de tipografía base para toda la página */
 body{
     background-color: white;
-    font-family:sans-serif ;
+    font-family: sans-serif;
 }
+
+/* Contenedor del encabezado */
 .header{
     background-color: white;
+    width: 100%;
 }
+
+/* Barra de navegación principal: distribuye los bloques a los extremos */
 .NAVEGACION{
-    background-color:white;
-    color: white;
-    display: flex;
-
+    background-color: white;
+    display: flex; /* Activa Flexbox para alinear elementos en fila */
+    align-items: center; /* Centra verticalmente todos los componentes */
+    justify-content: space-between; /* Empuja el bloque izquierdo y derecho a las esquinas */
+    padding: 15px 50px; /* Margen interno para dar aire a los lados (más fiel a la referencia) */
 }
-.barra{
 
+/* Bloque contenedor que une el logo y los enlaces de texto */
+.bloque-izquierdo {
+    display: flex; /* Pone el logo y los links en la misma línea */
+    align-items: center; /* Centra el texto verticalmente respecto al logo */
+    gap: 40px; /* Espacio de separación entre el logo y el bloque de enlaces */
 }
-.busqueda{
 
+/* Contenedor Flexbox para los enlaces de texto */
+.links{
+    display: flex; 
+    gap: 20px; /* Separación horizontal compacta entre cada enlace individual */
 }
-.imagen{
 
-}
+/* Estilos de los enlaces individuales */
 .links a{
-    padding: 10px;
-    text-decoration: none; 
-    color:black;
-    font-weight: bold;
-    font-size: 20px;
+    text-decoration: none; /* Elimina el subrayado azul clásico de los enlaces */
+    color: black;
+    font-weight: bold; /* Hace la letra gruesa */
+    font-size: 15px; /* Reducido de 20px a 15px para igualar la finura de la referencia */
 }
+
+/* Bloque derecho: Alinea perfil, botón e ingresar horizontalmente */
+.busqueda{
+    display: flex; 
+    align-items: center; /* Centra los iconos y el botón en el mismo eje horizontal */
+    gap: 25px; /* Espaciado uniforme entre los tres elementos de acción */
+}
+
+/* Estilos para el botón de Ingresar */
 .btn{
-    font-size: 20px;
+    font-size: 15px; /* Reducido para que no se vea gigante */
+    font-weight: bold; /* Texto en negrita dentro del botón */
     background-color: black;
     color: white;
-    padding:16px 35px ;
-    margin-left:00px ;
-    border-radius:40px ;
+    padding: 10px 28px; /* Reducido de (16px 35px) a (10px 28px) para estilizar la forma de cápsula */
+    border-radius: 40px; /* Mantiene los bordes completamente redondeados */
+    border: none; /* Elimina el borde gris por defecto del navegador */
+    cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
 }
-.carrito{
 
+/* Estilo  en Promos*/
+
+.Promos{
+
+}
+
+.Orden{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;  
 }
