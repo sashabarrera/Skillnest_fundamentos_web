@@ -37,6 +37,7 @@ body{
 .links{
     display: flex; 
     gap: 20px; /* Separación horizontal compacta entre cada enlace individual */
+    
 }
 
 /* Estilos de los enlaces individuales */
@@ -73,8 +74,36 @@ body{
 }
 
 .Orden{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*Para cambiar la letra*/
     text-align: center;
-    font-size: 25px;
-    font-weight: bold;  
+    font-size: 25px;/*Para agrandar la letra*/
+    font-weight: bold;  /*Para ponerle negrita*/
+}
+/*PEDIR */
+.linea_negra{
+    display: flex;/*Ayuda a tirar los elementos para el lado*/
+    background-color: black;/*Color de caja*/
+    padding: 15px;/*Tamaño de caja*/
+    align-items: center;/*Texto que se alinea igual que el boton*/
+    gap:25px;
+}
+
+.Domicilio{
+    background-color: red;
+    padding: 13px 20px;/*Tamaño de la baja primero de largo y de ancho*/
+    border-radius: 30px;/*Para redonder las puntas*/
+    color: white;
+}
+
+.decoracion a{
+    text-decoration: none;/*Para eliminar las lineas de enlace*/
+    color:white;
+    padding:7px;/*Para separar los textos*/
+}
+
+.Textito{
+    background-color:#F8F7F5 ;
+    display: flex;
+    font-size: 15px;
+    padding: 120px;
 }
