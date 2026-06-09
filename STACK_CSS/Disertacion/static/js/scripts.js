@@ -16,4 +16,3 @@ function iniciarSesion() {
         alert("Error: Usuario o contraseña incorrectos. Inténtalo de nuevo.");
     }
 }
-asdfghjkl,mnbvcxzsawq1234567890'¿¿¿+´{}
