@@ -34,16 +34,20 @@ body{
 }
 
 /* Contenedor Flexbox para los enlaces de texto */
-.links{
+.links {
     display: flex; 
     gap: 20px; /* Separación horizontal compacta entre cada enlace individual */
 }
 
-/* Estilos de los enlaces individuales */
 .links a{
-    text-decoration: none; /* Elimina el subrayado azul clásico de los enlaces */
-    color: black;
-    font-weight: bold; /* Hace la letra gruesa */
+    text-decoration: none;/*quitar decoracion a la letra*/
+    transform: transform 0.3s ease, margin-left 1s ease; /*tiempo y efecto*/
+    color: black;/*color para la letra*/
+}
+/* Estilos de los enlaces individuales */
+.links a:hover{
+    color: red;
+    font-weight: bold; /* Hace la letra gruesa o negrita */
     font-size: 15px; /* Reducido de 20px a 15px para igualar la finura de la referencia */
 }
 
