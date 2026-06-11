@@ -116,7 +116,7 @@ body{
 .Bienvenido{
     padding: 18px;
 }
-
+/*Restaurante*/
 .Contenido{
     background-color: #F8F7F5;
     padding: 35px;
@@ -131,9 +131,8 @@ body{
     margin-left: 230px;
 }
 .atras{
-    margin-left: -90px;
     margin-top:30px;
-    margin-left: -94px;/*Para mover los elemntos a la derecha cuando es negativo*/
+    margin-left: -94px;/*Para mover los elemntos a la izquierda cuando es negativo*/
     font-size: 20px;
 }
 
@@ -141,3 +140,35 @@ body{
     padding: 20px;
     margin-left: 230px;
 }
+
+.Menu{
+    display: flex;
+    justify-content: center;
+    margin-left: -150px;/*Ajuste de parametros para que la imagen quede centrada*/
+}
+
+/*Contacto*/
+.nuentro_contacto{
+    background-color: white;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 8px 8px  rgb(187, 179, 179);
+    margin-top: 20px;
+    padding: 20px ;
+}
+.nuentro_contacto p{
+padding: 5px;
+font-weight: bold;
+}
+.ncp{
+    font-size: 20px;
+}
+
+.WhatsApp {
+display: flex;
+align-items: center;
+}
+.WhatsApp img{
+    height: 30px;
+}
+/*Resturante*/
