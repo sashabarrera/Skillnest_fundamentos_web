@@ -1,174 +1,347 @@
 /* Reseteo global para eliminar márgenes del navegador por defecto */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+
 }
 
 /* Configuración de tipografía base para toda la página */
-body{
+body {
     background-color: white;
     font-family: sans-serif;
 }
 
 /* Contenedor del encabezado */
-.header{
+.header {
     background-color: white;
     width: 100%;
 }
 
 /* Barra de navegación principal: distribuye los bloques a los extremos */
-.NAVEGACION{
+.NAVEGACION {
     background-color: white;
-    display: flex; /* Activa Flexbox para alinear elementos en fila */
-    align-items: center; /* Centra verticalmente todos los componentes */
-    justify-content: space-between; /* Empuja el bloque izquierdo y derecho a las esquinas */
-    padding: 15px 50px; /* Margen interno para dar aire a los lados (más fiel a la referencia) */
+    display: flex;
+    /* Activa Flexbox para alinear elementos en fila */
+    align-items: center;
+    /* Centra verticalmente todos los componentes */
+    justify-content: space-between;
+    /* Empuja el bloque izquierdo y derecho a las esquinas */
+    padding: 15px 50px;
+    /* Margen interno para dar aire a los lados (más fiel a la referencia) */
+    flex-wrap: wrap;
+    /* Permite que los elementos bajen de línea si no caben */
 }
 
 /* Bloque contenedor que une el logo y los enlaces de texto */
 .bloque-izquierdo {
-    display: flex; /* Pone el logo y los links en la misma línea */
-    align-items: center; /* Centra el texto verticalmente respecto al logo */
-    gap: 40px; /* Espacio de separación entre el logo y el bloque de enlaces */
+    display: flex;
+    /* Pone el logo y los links en la misma línea */
+    align-items: center;
+    /* Centra el texto verticalmente respecto al logo */
+    gap: 40px;
+    /* Espacio de separación entre el logo y el bloque de enlaces */
+    flex-wrap: wrap;
+    /* Permite que los elementos bajen de línea si no caben */
 }
 
 /* Contenedor Flexbox para los enlaces de texto */
 .links {
-    display: flex; 
-    gap: 20px; /* Separación horizontal compacta entre cada enlace individual */
+    display: flex;
+    gap: 20px;
+    /* Separación horizontal compacta entre cada enlace individual */
+    flex-wrap: wrap;
+    /* Los enlaces pasan a otra fila en pantallas pequeñas */
 }
 
-.links a{
-    text-decoration: none;/*quitar decoracion a la letra*/
-    transform: transform 0.3s ease, margin-left 1s ease; /*tiempo y efecto*/
-    color: black;/*color para la letra*/
+.links a {
+    text-decoration: none;
+    /*quitar decoracion a la letra*/
+    transition: color 0.3s ease, transform 0.3s ease;
+    /*tiempo y efecto*/
+    color: black;
+    /*color para la letra*/
 }
+
 /* Estilos de los enlaces individuales */
-.links a:hover{
+.links a:hover {
     color: red;
-    font-weight: bold; /* Hace la letra gruesa o negrita */
-    font-size: 15px; /* Reducido de 20px a 15px para igualar la finura de la referencia */
+    font-weight: bold;
+    /* Hace la letra gruesa o negrita */
+    font-size: 15px;
+    /* Reducido de 20px a 15px para igualar la finura de la referencia */
 }
 
 /* Bloque derecho: Alinea perfil, botón e ingresar horizontalmente */
-.busqueda{
-    display: flex; 
-    align-items: center; /* Centra los iconos y el botón en el mismo eje horizontal */
-    gap: 25px; /* Espaciado uniforme entre los tres elementos de acción */
+.busqueda {
+    display: flex;
+    align-items: center;
+    /* Centra los iconos y el botón en el mismo eje horizontal */
+    gap: 25px;
+    /* Espaciado uniforme entre los tres elementos de acción */
+    flex-wrap: wrap;
+    /* Los enlaces pasan a otra fila en pantallas pequeñas */
 }
 
 /* Estilos para el botón de Ingresar */
-.btn{
-    font-size: 15px; /* Reducido para que no se vea gigante */
-    font-weight: bold; /* Texto en negrita dentro del botón */
+.btn {
+    font-size: 15px;
+    /* Reducido para que no se vea gigante */
+    font-weight: bold;
+    /* Texto en negrita dentro del botón */
     background-color: black;
     color: white;
-    padding: 10px 28px; /* Reducido de (16px 35px) a (10px 28px) para estilizar la forma de cápsula */
-    border-radius: 40px; /* Mantiene los bordes completamente redondeados */
-    border: none; /* Elimina el borde gris por defecto del navegador */
-    cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
+    padding: 10px 28px;
+    /* Reducido de (16px 35px) a (10px 28px) para estilizar la forma de cápsula */
+    border-radius: 40px;
+    /* Mantiene los bordes completamente redondeados */
+    border: none;
+    /* Elimina el borde gris por defecto del navegador */
+    cursor: pointer;
+    /* Cambia el cursor a mano para indicar que es clickeable */
+    transition: transform 0.3s ease;
+    /* Hace que el cambio sea suave */
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    /* Agranda el botón un 10% cuando pasas el mouse */
 }
 
 /* Estilo  en Promos*/
 
 
-.Orden{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*Para cambiar la letra*/
+.Orden {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*Para cambiar la letra*/
     text-align: center;
-    font-size: 25px;/*Para agrandar la letra*/
-    font-weight: bold;  /*Para ponerle negrita*/
-}
-/*PEDIR */
-.linea_negra{
-    display: flex;/*Ayuda a tirar los elementos para el lado*/
-    background-color: black;/*Color de caja*/
-    padding: 15px;/*Tamaño de caja*/
-    align-items: center;/*Texto que se alinea igual que el boton*/
-    gap:25px;
+    font-size: 25px;
+    /*Para agrandar la letra*/
+    font-weight: bold;
+    /*Para ponerle negrita*/
+
 }
 
-.Domicilio{
+.ORDENAR {
+    padding: 10px;
+}
+
+/*PEDIR */
+.linea_negra {
+    display: flex;
+    /*Ayuda a tirar los elementos para el lado*/
+    background-color: black;
+    /*Color de caja*/
+    padding: 15px;
+    /*Tamaño de caja*/
+    align-items: center;
+    /*Texto que se alinea igual que el boton*/
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.Domicilio {
     background-color: red;
-    padding: 13px 20px;/*Tamaño de la baja primero de largo y de ancho*/
-    border-radius: 30px;/*Para redonder las puntas*/
+    padding: 13px 20px;
+    /*Tamaño de la baja primero de largo y de ancho*/
+    border-radius: 30px;
+    /*Para redonder las puntas*/
     color: white;
 }
 
-.decoracion a{
-    text-decoration: none;/*Para eliminar las lineas de enlace*/
-    color:white;
-    padding:7px;/*Para separar los textos*/
+
+.decoracion a {
+    text-decoration: none;
+    /*Para eliminar las lineas de enlace*/
+    color: white;
+    padding: 7px;
+    /*Para separar los textos*/
 }
 
-.Textito{
-    background-color:#F8F7F5 ;
+.Textito {
+    background-color: #F8F7F5;
     padding: 140px;
     height: 600px;
 }
 
-.Enlaces{
+.Enlaces {
     display: flex;
     font-weight: bold;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
-.Bienvenido{
+.Bienvenido {
     padding: 18px;
 }
+
 /*Restaurante*/
-.Contenido{
+.Contenido {
     background-color: #F8F7F5;
     padding: 35px;
     height: 600px;
-
-
 }
-.Enlace{
+
+.Enlace {
     display: flex;
     font-weight: bold;
     gap: 20px;
     margin-left: 230px;
-}
-.atras{
-    margin-top:30px;
-    margin-left: -94px;/*Para mover los elemntos a la izquierda cuando es negativo*/
-    font-size: 20px;
+    flex-wrap: wrap;
 }
 
-.Restaurante{
+.atras {
+    margin-top: 30px;
+    margin-left: -220px;
+    /*Para mover los elemntos a la izquierda cuando es negativo*/
+    font-size: 17px;
+}
+
+.Pe {
+    font-size: 12px;
+    text-align: center;
+}
+
+.Ini {
+    text-decoration: none;
+    color: black;
+}
+
+.Ini:hover {
+    text-decoration: underline;
+}
+
+.Res {
+    text-decoration: none;
+    color: black;
+}
+
+.Res:hover {
+    text-decoration: underline;
+}
+
+
+.Atras {
+    text-decoration: none;
+    color: black;
+}
+
+.Restaurante {
     padding: 20px;
-    margin-left: 230px;
+    margin-left: 120px;
 }
 
-.Menu{
-    display: flex;
-    justify-content: center;
-    margin-left: -150px;/*Ajuste de parametros para que la imagen quede centrada*/
-}
+
 
 /*Contacto*/
-.nuentro_contacto{
+.nuestro_contacto {
     background-color: white;
     height: 200px;
     border-radius: 20px;
-    box-shadow: 8px 8px  rgb(187, 179, 179);
+    box-shadow: 8px 8px rgb(187, 179, 179);
     margin-top: 20px;
-    padding: 20px ;
+    padding: 20px;
+    width: 560px;
 }
-.nuentro_contacto p{
-padding: 5px;
-font-weight: bold;
+
+.nuestro_contacto p {
+    padding: 5px;
+    font-weight: bold;
 }
-.ncp{
+
+.ncp {
     font-size: 20px;
 }
 
 .WhatsApp {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
-.WhatsApp img{
+
+.WhatsApp img {
+
     height: 30px;
 }
+
 /*Resturante*/
+
+.footer {
+    background-color: #f5f5f5;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.section-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto {
+    font-weight: bold;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.item-footer {
+    flex: 1;
+}
+
+.descri {
+    color: rgb(119, 119, 119);
+    padding: 5px;
+}
+
+.container-main {
+    width: 100%;
+}
+
+.Menu {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 35px;
+    height: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.caja {
+    flex: 1;
+    min-width: 200px;
+}
+
+.cupon {
+    background-color: white;
+    color: black;
+    padding: 15px 280px;
+    margin: 2px;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 21px;
+    border: 2px solid rgb(170, 163, 163);
+}
+
+.informacion-restaurante {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    
+}
+
+.Resaltar{
+    color: red;
+}
