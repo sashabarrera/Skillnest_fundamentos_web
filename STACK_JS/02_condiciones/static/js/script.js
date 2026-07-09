@@ -13,16 +13,16 @@ console.log("Conexion exitosa..");
 // Descuento aplicado
 // Total a pagar
 
-function sistemaDescuento(){
-    let nombre=prompt("ingrese su nombre");
-    let monto= parseInt(prompt("Ingrese el monto de compra: "))
-    if(monto >= 50000){
+function sistemaDescuento() {
+    let nombre = prompt("ingrese su nombre");
+    let monto = parseInt(prompt("Ingrese el monto de compra: "))
+    if (monto >= 50000) {
         alert(`El monto con descuento es: ${monto - (monto * 0.20)}`)
-    }else if(monto >= 30000){
+    } else if (monto >= 30000) {
         alert(`El monto con decuento es:  ${monto - (monto * 0.1)}`)
-    }else if(monto <= 30000 && monto >0){
+    } else if (monto <= 30000 && monto > 0) {
         alert(`El monto final es: ${monto}. Sin descuento`)
-    }else{
+    } else {
         alert("Ingrese valores validos");
     }
 }
@@ -40,18 +40,18 @@ function sistemaDescuento(){
 // “Acceso permitido”
 // o “Acceso denegado”
 
-function accesoVento(){
-    let edad=parseInt(prompt("Ingrese su edad"))
-    if(edad > 18){
+function accesoVento() {
+    let edad = parseInt(prompt("Ingrese su edad"))
+    if (edad > 18) {
         alert("acceso permitido!")
     }
-    else if (edad < 18 && edad > 0){
+    else if (edad < 18 && edad > 0) {
         let permitido = prompt("¿Viene con un acompañate?: si/no");
-        if(permitido == "si"){
+        if (permitido == "si") {
             alert("Acceso permitido")
-        }else if (permiso == "no"){
+        } else if (permiso == "no") {
             alert("Acceso denegado")
-        }else{
+        } else {
             alert("Ingrese valores validos")
         }
     }
@@ -73,3 +73,113 @@ function accesoVento(){
 // Además:
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
+
+function mostrarTemperatura() {
+    let Temperatura = parseInt(prompt("Ingresa la temperatura actual:"))
+    if (Temperatura < 10 && Temperatura > -30) {
+        mensaje = "Hace frio"
+    } else if (Temperatura >= 10 && Temperatura <= 24) {
+        mensaje = "Temperatura agradable";
+    } else if (Temperatura >= 25 && Temperatura <= 50) {
+        mensaje = "Hace calor";
+    } else {
+        mensaje = "❌ Ingresar valores válidos!"
+    }
+
+    //Alerta adicional
+    if (Temperatura > 35 && Temperatura < 50) {
+        mensaje += "\n  ⚠️ ¡Alerta!: Temperatura exxtrema";
+    }
+    alert(mensaje)
+}
+
+
+// ✅ Ejercicio 4: Verificación de administrador
+// 📝 Enunciado
+// Solicitar:
+// Nombre de usuario
+// Contraseña
+// Condiciones:
+// Usuario correcto: admin
+// Contraseña correcta: 12345
+// Casos:
+// Si ambos son correctos → “Bienvenido administrador”
+// Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
+// Si usuario no existe → “Usuario no encontrado”
+
+function ejercicio4() {
+    let usuario = prompt("Ingresar su  nombre de usuario:");
+    let contrasena = prompt("Ingresar su contraseña:");
+
+    if (usuario === "admin" && contrasena === "12345") {
+        alert("Bienvenido Adminitrador" + usuario);
+    } else if (usuario === "admin") {
+        alert("Contraseña Incorrecta");
+    } else {
+        alert(`Usuario "${usuario}" no encontrado!`);
+    }
+}
+
+
+
+// ✅ Ejercicio 5: Sistema de aprobación
+// 📝 Enunciado
+// Solicitar:
+// Nombre del estudiante
+// Nota 1
+// Nota 2
+// Nota 3
+// Calcular promedio.
+// Condiciones:
+// Promedio 6.0 o superior → “Aprobado con excelencia”
+// Promedio entre 4.0 y 5.9 → “Aprobado”
+// Menor a 4.0 → “Reprobado”
+// Además:
+// Si alguna nota es menor a 2.0 mostrar:
+//  “Debe asistir a reforzamiento”.
+
+function promedio() {
+    let nombreEstudiante = prompt("Ingresar tu nombre:")
+    let nota1 = parseInt(prompt("Ingresar nota: "))
+    let nota2 = parseInt(prompt("Ingresar nota: "))
+    let nota3 = parseInt(prompt("Ingresar nota: "))
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    if (promedio >= 6.0 && (nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0)) {
+        alert(`El estudiante ${nombreEstudiante} tiene  un promedio  de ${promedio}  y debe asistir aun reforzamiento`)
+    } else if (promedio >= 6.0 && promedio <= 7.0) {
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y aprobó con excelencia`)
+    } else if (promedio >= 4.0 && (nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0)) {
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y debe asistir a reforzamiento`)
+    } else if (promedio == 4.0 && promedio < 6.0) {
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y aprobó`)
+    } else if (promedio < 4.0 && promedio >= 1.0) {
+        alert(`El estudiante ${nombreEstudiante} tiene un promedio de ${promedio} y sta reprobado`)
+    } else {
+        alert(`Ingrese valores validos`)
+    }
+}
+
+
+
+
+
+
+// 📌 Requisitos Técnicos
+// Cada ejercicio debe:
+// Tener su propia función JavaScript
+// Ser ejecutado mediante onclick
+// Usar prompt()
+// Mostrar resultados con alert()
+// Utilizar correctamente:
+// if
+// else if
+// else
+// operadores lógicos
+// operadores de comparación
+
+// ⭐ Desafío Extra
+// Agregar:
+// Validación de campos vacíos
+// Cambios visuales usando JavaScript
+// Resultados dentro del HTML usando innerHTML
+// Uso de íconos o emojis según el resultado
