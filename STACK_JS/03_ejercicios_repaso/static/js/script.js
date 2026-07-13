@@ -70,11 +70,24 @@ function ejercicio1(){
 // - Si el préstamo está permitido.
 // - Si supera el límite permitido.
 // - Mostrar un mensaje diferente según el tipo de usuario.
-function ejercicio2(){
-    let Estudiante = "";
-    let 
-}
 
+function ejercicio2() {
+    let tipoUsuario = prompt("Ingrese tipo de usuario (estudiante / profesor):").toLowerCase();
+    let cantidadLibros = parseInt(prompt("Ingrese la cantidad de libros solicitados:"));
+    let limiteEstudiante = 2;
+    let limiteProfesor = 5;
+    if (tipoUsuario == "estudiante" && cantidadLibros <= limiteEstudiante) {
+        alert(`Préstamo permitido. ¡Disfruta tus ${cantidadLibros} libros, estimado Estudiante!`);
+    } else if (tipoUsuario == "estudiante" && cantidadLibros > limiteEstudiante) {
+        alert(`Préstamo denegado. Como Estudiante, superas el límite permitido de ${limiteEstudiante} libros.`);
+    } else if (tipoUsuario == "profesor" && cantidadLibros <= limiteProfesor) {
+        alert(`Préstamo permitido. Profesor, se le han asignado sus ${cantidadLibros} libros para sus clases.`);
+    } else if (tipoUsuario == "profesor" && cantidadLibros > limiteProfesor) {
+        alert(`Préstamo denegado. Estimado Profesor, ha superado su límite de ${limiteProfesor} libros.`);
+    } else {
+        alert("Error: Tipo de usuario no válido o cantidad incorrecta. Intente de nuevo.");
+    }
+}
 
 
 // Utilizar operadores lógicos para realizar las validaciones.
@@ -103,8 +116,21 @@ function ejercicio2(){
 function ejercicio3(){
     let nombrePariente = prompt("Ingrese nombre del pariente:");
     let edad =  parseInt(prompt("Ingresar tu edad:"));
-    let
-    if(edad )
+    let categoríasInfantil =  12;
+    let categoriaJovenil = 19;
+    let categoriaAdulto = 64;
+    let categoriaMayor = 90;
+    if(edad >= 0 && edad <= 12){
+        alert(`Nombre: ${nombrePariente}\nEdad: ${edad}\nCategoria asignada: Infantil `);
+    } else if(edad >= 13 && edad <=19){
+        alert(`Nombre: ${nombrePariente}\nEdad: ${edad}\nCategoria asiganada: Juvenil`);
+    } else if(edad >= 20 && edad <= 64){
+        alert(`Nombre: ${nombrePariente}\nEdad: ${edad}\nCategoria asignada: Adulto `);
+    } else if(edad >= 65 && edad <= 90){
+        alert(`Nombre: ${nombrePariente}\nEdad: ${edad}\nCategoria asiganada: Mayor`);
+    } else{
+        alert("Ingrese valores validos");
+    }
 }
 
 
@@ -131,7 +157,9 @@ function ejercicio3(){
 // - Mensaje indicando si recibe o no bonificación.
 
 function ejercicio4(){
-
+let nombreTrabajador = prompt("Ingresar nombre");
+let años = parseInt(prompt("Ingresar años de servicio"));
+let 
 }
 
 
@@ -161,6 +189,19 @@ function ejercicio4(){
 // - Clasificación obtenida
 
 // ---
+
+function ejercicio5(){
+
+}
+
+
+
+
+
+
+
+
+
 
 // # Desafío Extra
 
