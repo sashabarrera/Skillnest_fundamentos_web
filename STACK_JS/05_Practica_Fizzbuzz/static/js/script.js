@@ -60,17 +60,18 @@ function Pracricarjecutar() {
     alert(i);
   }
 }
-  
 
-function Ejecutar(){
-  for (let i =1; i <= 100; i++){
-  }if(i % 3 === 0 && i % 5 === 0){
-    alert("Fizzbuzz");
-  } else if(i % 3 === 0){
-    alert("Fizz");
-  } else if(i % 5 === 0){
-    alert("Buzz");
-  }else{
-    alert(i);
+
+function Ejecutar() {
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      alert("Fizzbuzz");
+    } else if (i % 3 === 0) {
+      alert("Fizz");
+    } else if (i % 5 === 0) {
+      alert("Buzz");
+    } else {
+      alert(i);
+    }
   }
 }
