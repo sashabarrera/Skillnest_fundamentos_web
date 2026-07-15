@@ -22,7 +22,6 @@ function contarInteracciones() {
 }
 
 
-
 // ⏳ Simular una barra de carga: Crea un programa que
 // simule una barra de carga mostrando porcentajes de progreso
 // del 0% al 100% en incrementos de 10. Ejemplo de salida esperada:
@@ -51,13 +50,12 @@ function barraCarga() {
 // Producto 4 - Descuento aplicado: 20%
 // Producto 5 - Descuento aplicado: 25%
 function simularDescuento() {
-  for (let i = 1; i <= 5; i++) {
-    let descuento = i * 5;
-    alert(`Producto ${i} - Descuentos aplicando: ${descuento}%`);
-  }
+    for (let i = 1; i <= 5; i++) {
+        let valorProducto = parseInt(prompt(`Ingrese valor del producto:`))
+        alert(`Producto ${i} - Descuento aplicado: ${i * 5}%
+            \nValor final: ${valorProducto - (valorProducto * (i * 0.05))}`);
+    }
 }
-
-
 
 
 // 🎮 Calcular el total de puntos en un videojuego: Un jugador gana 50 puntos cada vez que
@@ -71,8 +69,6 @@ function calcularPuntos() {
     alert(`Nivel ${i} - puntos ganados ${puntosGandos}`);
   }
 }
-
-
 
 
 // 🔔 Contador de notificaciones en una app: Imagina que una aplicación de mensajería muestra
@@ -93,8 +89,6 @@ for (let i = 5; i > 0; i--) {
 let  i=0;
       alert(`No tienes notificaciones pendientes.`);
 }
-
-
 
 
 // 💡 Tips
