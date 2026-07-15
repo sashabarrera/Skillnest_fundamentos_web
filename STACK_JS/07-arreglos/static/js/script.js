@@ -1,30 +1,31 @@
 console.log("Prueba de conexion Js...");
 
 
-// function Nombres() {
-//   let nombres = ["Ana", "Pedro", "Maria", "Carlos"];
-//   alert(nombres[2]);
-// }
+//Valiables a lista
 
-// let compras = [5000, 2300, 12000, 4500, 3000];
-// let alumnos = ["Ana", "Pedro", "María", "José"];
-// let datos = ["Carlos", 18, true];
-// let frutas = ["Manzana", "Pera", "Kiwi", "Sandía"];
+let nombre1 = "Ana";
+let nombre2 = "Pedro";
+let nombre3 = "María";
+let nombre4 = "Carlos";
 
-// let mensaje = `${alumnos[2]} tiene ${datos[1]} años, y compro una ${fruta[3]} a ${compras[1]}`;
-// alert(mensaje);
+let Nombres = ["ana","Pedro" ,"María" ,"Carlos"]
+//Mostrar a maria en una alerta
+function  Ejercicio(){
+    let Nombres = ["ana","Pedro" ,"María" ,"Carlos"];
+    alert (Nombres[2]); //Mostrar a maria en una alerta
+    let compras = [5000, 2300, 12000, 4500, 3000];
+    let alumnos = ["Ana", "Pedro", "María", "José"];
+    let datos = ["Carlos", 18, true];
+    let frutas = ["Manzana", "Pera", "Kiwi", "Sandía"];
+    let mensaje =`${alumnos[1]} compro una ${frutas [0]} a ${compras[1]} con ${datos[0]}`;
+    alert(mensaje);}
 
-// let frutas = ["Manzana", "Pera", "Kiwi", "Sandía"];
-// console.log(frutas.length);// 4 --> Conteo de elementos
 
-// let ultima = frutas[frutas.length - 1];
-// // variable.length -1 siempre trae el ultimo elemento
-// console.log(ultima);
-
-//Desafio
-// Del arreglo ["Hola", "a", "todos", "los",
-//  "programadores"]
-//Mostrar el penutimo elemento y el ultimo concatenado
+//obtener el ultimo elemento
+let frutas = ["Manzana", "Pera", "Kiwi", "Sandía"];
+let ultima = frutas[frutas.length -1]
+// "variable.length -1 "simpre trae el ultimo elemento
+console.log(ultima);
 
 let frases = ["Hola", "a", "todos", "los",
   "programadores"];
