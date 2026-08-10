@@ -1,32 +1,35 @@
 console.log("Prueba de conexion Js...");
 
 
-
-// Seleccionamos el botón por su id
 let boton = document.getElementById("cambiarTexto");
-//Guardando una referencioa
 
-// Agregamos un evento 'click' al botón
 boton.addEventListener("click", function () {
-    let textoBoton = boton.textContent; //Guardando texto del boton
-    if (textoBoton == "Haz clic en mí") {
-        this.innerText = "¡Texto cambiado!";
+    let textoBoton = boton.textContent; 
+    if (textoBoton == "Cerrar sesión") {
+        this.innerText = "Iniciar sesión";
     } else {
-        this.innerText = "Haz clic en mí";
+        this.innerText = "Cerrar sesión";
     }
-    // Cambia el texto del botón usando `this`
-    //innerText: Texto de la etiqueta
+
+});
+
+function perfil(){
+    alert("!Bienvenido¡");
+}
+
+let botonMegusta = document.getElementById("like");
+
+botonMegusta.addEventListener("click", function () {
+    let cantidad = parseInt(botonMegusta.textContent) + 1;
+    botonMegusta.innerText = cantidad + " Me gusta";
+});
+
+let botonMegusta2 = document.getElementById("like2");
+
+botonMegusta2.addEventListener("click", function () {
+    let cantidad = parseInt(botonMegusta2.textContent) + 1;
+    botonMegusta2.innerText = cantidad + " Me gusta";
 });
 
 
 
-// Seleccionamos todas las imágenes con la clase 'imagenEliminar'
-let imagenes = document.querySelectorAll(".imagenEliminar");
-
-// Agregamos un evento 'click' a cada imagen
-imagenes.forEach(function (imagen) {
-    imagen.addEventListener("click", function () {
-        // Eliminamos la imagen al hacer clic
-        this.remove();
-    });
-});
