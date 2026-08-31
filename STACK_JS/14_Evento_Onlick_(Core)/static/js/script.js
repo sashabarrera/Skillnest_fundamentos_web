@@ -30,6 +30,3 @@ botonMegusta2.addEventListener("click", function () {
     let cantidad = parseInt(botonMegusta2.textContent) + 1;
     botonMegusta2.innerText = cantidad + " Me gusta";
 });
-
-
-

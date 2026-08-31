@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f3f9;
+    color: #333333;
+}
+
+
+.navbar {
+    background-color: #4A3F35;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 12px 90px;
+    gap: 15px; 
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 40px;
+}
+
+.busqueda {
+    width: 450px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-logo {
+    background-color: #D9C7B8;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tarjeta{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+
+}
+.section-tarjeta {
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: #9c9b9b 0 2px 5px;
+    border-radius: 8px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+img {
+    width: 500px;
+    height: 400px;
+}
