@@ -35,15 +35,24 @@ if (boton !== null) {
 - Debe activarse un hover js cambiando el color de fondo 
 */
 
-const botoncito = document.getElementById("main-boton");
+const botoncito = document.querySelector("#main-boton")
 
 
-main-boton.addEventListener("click", function () {
-    console.log("El ratón está sobre el botón");
-    botoncito.style.backgroundColor = "white";
-    botoncito.style.color = "black";
-    botoncito.innerText = "Haz cambiado el texto!";
-});
+botoncito.addEventListener("click", function () {
+    if (botoncito !== null) {//boton existe?
+        if (this.textContent === "Haz click en mi y cambiare") {
+            this.textContent === "Ves que es distinto?"
+            this.style.backgroundColor = "pink"
+            this.style.color = "black"
+        } else {
+            this.textContent = "Haz click en mi y cambiare"
+            this.style.backgroundColor = "gray"
+            this.style.color = "white"
+        }
+    } else { //boton no existe
+        console.log("El botón no existe.");
+    }
+    });
 
 
 
