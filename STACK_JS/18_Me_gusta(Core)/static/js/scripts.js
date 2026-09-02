@@ -7,7 +7,7 @@ for (let i = 0; i < publicaciones.length; i++) {
 
 
     let boton = publicacion.querySelector('.descripcion-boton');
-    let contador = publicacion.querySelector('#meGustas');
+    let contador = publicacion.querySelector('.meGustas');
     let likes = 0;
 
     if (boton && contador) {
